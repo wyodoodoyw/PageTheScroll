@@ -27,20 +27,23 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="C82-4S-84Z"/>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gc-tp-T1n"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gc-tp-T1n">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Tb6-Mx-UJJ"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="C82-4S-84Z" secondAttribute="trailing" id="6FI-HS-1V6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="C82-4S-84Z" secondAttribute="bottom" id="7hw-bX-ebx"/>
                             <constraint firstItem="ixB-ea-VlQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Af5-Zr-Qg4"/>
-                            <constraint firstItem="3gc-tp-T1n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FQ0-nj-S4K"/>
                             <constraint firstItem="ixB-ea-VlQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Jcj-P4-6ox"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="C82-4S-84Z" secondAttribute="bottom" id="RjW-X5-L2A"/>
                             <constraint firstItem="Ypf-7x-NRR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="UGb-td-h5p"/>
-                            <constraint firstAttribute="trailing" secondItem="3gc-tp-T1n" secondAttribute="trailing" id="V6g-f1-D5n"/>
                             <constraint firstItem="C82-4S-84Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vie-Mc-Lfw"/>
                             <constraint firstAttribute="trailing" secondItem="C82-4S-84Z" secondAttribute="trailing" id="a3J-jX-sWF"/>
+                            <constraint firstItem="3gc-tp-T1n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cMs-ir-Ccf"/>
                             <constraint firstItem="Ypf-7x-NRR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dlc-8U-a5C"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3gc-tp-T1n" secondAttribute="bottom" id="eT1-RS-sEB"/>
                             <constraint firstItem="3gc-tp-T1n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pXm-Ze-9QD"/>
