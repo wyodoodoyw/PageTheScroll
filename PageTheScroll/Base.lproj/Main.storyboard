@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -27,13 +27,15 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="C82-4S-84Z"/>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gc-tp-T1n">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gc-tp-T1n">
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="Tb6-Mx-UJJ"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="C82-4S-84Z" secondAttribute="trailing" id="6FI-HS-1V6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="C82-4S-84Z" secondAttribute="bottom" id="7hw-bX-ebx"/>
@@ -51,12 +53,26 @@
                             <constraint firstAttribute="trailing" secondItem="ixB-ea-VlQ" secondAttribute="trailing" id="tfP-hh-S1s"/>
                             <constraint firstItem="C82-4S-84Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zO7-p3-32t"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="NDk-Rf-9gf" appends="YES" id="Lif-2T-cNM"/>
+                            <outletCollection property="gestureRecognizers" destination="C1A-M5-SLQ" appends="YES" id="TVE-mK-Imz"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="3gc-tp-T1n" id="usL-Sb-6sk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="NDk-Rf-9gf">
+                    <connections>
+                        <action selector="detectSwipe:" destination="BYZ-38-t0r" id="Ygc-hN-eVt"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="C1A-M5-SLQ">
+                    <connections>
+                        <action selector="detectSwipe:" destination="BYZ-38-t0r" id="8b4-9t-exK"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
